@@ -1,0 +1,49 @@
+.nav {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  background: #212c2f;
+  color: white;
+}
+
+.logo {
+  letter-spacing: 1.5px;
+  color: rgb(255, 255, 255);
+}
+
+.logo2 {
+  color: #BA1008;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.links li {
+  cursor: pointer;
+}
+.links li:hover{
+  color: #eb6f68;
+}
+.auth button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: red;
+  color: white;
+}
