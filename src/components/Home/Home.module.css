@@ -9,7 +9,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 0 20px 80px 20px;
+  padding: 0 20px 20px 20px;
   color: #dba46d;
   text-align: center;
   background-color: #000;
@@ -52,7 +52,7 @@
 .categories h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #dba46d;
 }
 
 /* GRID */
@@ -94,13 +94,15 @@
   text-align: center;
   padding: 60px 20px;
 }
-
+.contact h2{
+  color: #dba46d;
+}
 .contactBox {
   margin-top: 20px;
 }
 
 .social {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .social i {
@@ -108,7 +110,9 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+.social i:hover{
+  color: rgb(81, 81, 230);
+}
 /* ===================== */
 /* RESPONSIVE BREAKPOINTS */
 /* ===================== */
@@ -129,14 +133,20 @@
   .hero {
     align-items: flex-end;
     min-height: 30vh;
+    padding-bottom: 0px;
   }
 
   .heroContent {
     padding: 15px 20px;
   }
-
-  .btn {
+  .categories {
     padding: 10px 10px;
+  }
+  .categories h2 {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 10px 5px;
     font-size: 0.9rem;
   }
 
@@ -149,18 +159,24 @@
 @media (max-width: 480px) {
   .heroContent h1 {
     font-size: 1.5rem;
+   padding-bottom: 0px;
   }
-
   .heroContent p {
     font-size: 0.85rem;
   }
 
   .btn {
-    padding: 8px 18px;
+    padding: 8px 5px;
     font-size: 0.8rem;
   }
 
   .categories h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .card{
+    padding: 0px;
+  }
+  .card img{
+    height: 150px;
   }
 }

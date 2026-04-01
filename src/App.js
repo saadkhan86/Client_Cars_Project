@@ -1,16 +1,24 @@
-import './App.css';
-import Home from "./components/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
+import "./App.css"
+import Home from "./components/Home/Home"
+import Navbar from "./components/Navbar/Navbar"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import Contact from "./components/Contact/Contact"
+import About from "./components/About/About"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <BrowserRouter>
         <Navbar />
-        <Home />
-      </header>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

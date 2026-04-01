@@ -41,6 +41,8 @@ export default function Home() {
           <i className="fa-brands fa-instagram"></i>
           <i className="fa-brands fa-twitter"></i>
           <i className="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-whatsapp"></i>
+          <i className="fa-solid fa-envelope"></i>
         </div>
       </section>
     </div>
